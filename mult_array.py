@@ -4,6 +4,7 @@ This module gets a different module as a parameter and parses its
 doc, functions, and function annotations into a HTML document
 """
 class List(list):
+    
     def __getitem__(self, key):
         if isinstance(key, int):
             return super().__getitem__(key)
